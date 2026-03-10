@@ -32,7 +32,7 @@ def run_lighthouse(url: str) -> dict:
             "lighthouse",
             url,
             "--quiet",
-            "--chrome-flags='--headless --no-sandbox'",
+            "--chrome-flags=--headless --no-sandbox --disable-gpu",
             "--no-enable-error-reporting",
             f"--output=json",
             f"--output-path={tmp_path}"
